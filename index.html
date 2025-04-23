@@ -2,15 +2,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Survival Race</title>
   <style>
-    html, body { margin: 0; padding: 0; overflow: hidden; background: #000; }
+    body { margin: 0; overflow: hidden; background: #000; font-family: Arial, sans-serif; }
+    #logo-container {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+    }
+    #logo-container img {
+      height: 80px;
+    }
     canvas { display: block; }
   </style>
 </head>
 <body>
+  <div id="logo-container">
+    <img src="https://www.onlinegames.io/media/posts/768/responsive/Survival-Race-xs.jpg" alt="Survival Race Logo">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
   <script src="game.js"></script>
 </body>
 </html>
